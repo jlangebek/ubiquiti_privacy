@@ -1,5 +1,6 @@
 # ubiquiti_privacy
-List of known addresses that Ubiquiti uses for phoning home
+List of known addresses that Ubiquiti uses for phoning home - I use it for my Pi-Hole setup...
+
 This hosts file is a collection of hosts that Unifi Dream Machine or related Unifi hardware (switches+access points)
 uses for "phoning home" to Ubiquiti in spite of opt-outs, etc.
 The phoning home is not necessarily a privacy problem, but the issue is that Ubiquiti does add new "features" over time
