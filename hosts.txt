@@ -1,0 +1,47 @@
+# Title: jlangebek/ubiquiti_privacy
+#
+# This hosts file is a collection of hosts that Unifi Dream Machine or related Unifi hardware (switches+access points)
+# uses for "phoning home" to Ubiquiti in spite of opt-outs, etc.
+# The hosts contained in this file are based on Pi-Hole logging on the latest version of Unifi software (controller, etc)
+#
+# Each section documents a number of addresses spotted by using UI hardware. The "Probably used for" and "Privacy view"
+# describes in my laymans terms what these addresses are most probably used for (as there is no real central documentation
+# of this, to the best of my knowledge), and "Privacy view" describes why this is blocked (ie. in this file).
+#
+# Date: 02 July 2021  (UTC)
+#
+# Fetch the latest version of this file: https://raw.githubusercontent.com/jlangebek/ubiquiti_privacy/hosts
+# Project home page: https://github.com/jlangebek/ubiquiti_privacy
+# Project releases: https://github.com/jlangebek/ubiquiti_privacy
+#
+# ===============================================================
+
+#=====================================
+# Section: Ping hosts
+# Probably used for: checking internet connection from your Unifi system
+# Privacy view: UI registering your system on that address
+0.0.0.0 ping.ui.com
+0.0.0.0 ping.ubnt.com
+
+#=====================================
+# Section: Administration
+# Probably used for: downloading various static information (icons, text, ...) 
+# Privacy view: UI registering what units you are using on your network, size of network, etc.
+0.0.0.0 static.ubnt.com
+
+#=====================================
+# Section: IPS reporting
+# Probably used for: contributing ips information to UI cloud???
+# Privacy view: UI registering network information (IPS) from your internal network, doing some kind of aggregation of data and anomalies to discover/prevent attacks
+0.0.0.0 ips1.unifi-ai.com
+
+#=====================================
+# Section: Miscellaneous
+# Probably used for: tracking
+# Privacy view: tracking your network, contents, status, ... -problem is we do not know...
+0.0.0.0 trace.svc.ui.com
+
+
+
+
+
